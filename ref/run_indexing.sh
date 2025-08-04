@@ -17,11 +17,11 @@ module load bowtie2
 
 # BWA indexing
 echo "Starting BWA indexing..."
-bwa index -p r/home/abportillo/github_repo/RNA_seq_Bcell/scripts/ERVmap/ref/bwa_genome /home/abportillo/github_repo/RNA_seq_Bcell/scripts/ERVmap/ref/hg38_p14.fa
+bwa index -p /home/abportillo/github_repo/ERVmap/ref/bwa_genome /home/abportillo/github_repo/ERVmap/ref/hg38_p14.fa
 
 # Bowtie2 indexing
 echo "Starting Bowtie2 indexing..."
-bowtie2-build /home/abportillo/github_repo/RNA_seq_Bcell/scripts/ERVmap/ref/hg38_p14.fa /home/abportillo/github_repo/RNA_seq_Bcell/scripts/ERVmap/ref/Bowtie2_genome
+bowtie2-build /home/abportillo/github_repo/ERVmap/ref/hg38_p14.fa /home/abportillo/github_repo/ERVmap/ref/Bowtie2_genome
 
 # # Optional: build transcriptome index if needed
 # echo "Generating transcriptome index with TopHat2..."
